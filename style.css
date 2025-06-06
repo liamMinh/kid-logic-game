@@ -32,3 +32,16 @@ button {
 button:hover {
   background-color: #50fa7b;
 }
+
+.popup {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  z-index: 9999;
+  box-shadow: 0 0 10px #999;
+}
