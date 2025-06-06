@@ -4,22 +4,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kid Logic Game</title>
+  <title>LiamMinh's Logic Game</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<script>
-  var pwd = prompt("Enter the password:");
-  if (pwd !== "familyonly") {
-    document.body.innerHTML = "<h2>Access Denied</h2>";
-  }
-</script>
-
-  <h1>Welcome to the Logic Game!</h1>
-  <p>Solve simple challenges and have fun!</p>
-  <img src="assets/cartoon.png" alt="Kid Cartoon" width="200" />
+  <div class="welcome">
+    <h1>🎉 Welcome, LiamMinh! 🎉</h1>
+    <p>Are you ready for some fun logic puzzles?</p>
+    <img src="assets/cartoon.png" alt="Kid Cartoon" width="200" />
+  </div>
   <div id="game">
-    <p>Is 2 + 2 equal to 4?</p>
+    <p id="question"></p>
     <button onclick="checkAnswer(true)">Yes</button>
     <button onclick="checkAnswer(false)">No</button>
   </div>
